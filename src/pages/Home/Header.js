@@ -2,6 +2,11 @@ import React from 'react';
 
 export default function Header(){
     return(
-        <div>Header</div>
+        <div className="header">
+            <div className="heading-container">
+                <h1>Aniketh Nair</h1>
+                <p>Freelancer. Startup Enthusiast. Frontend Web Dev</p>
+            </div>
+        </div>
     )
 }

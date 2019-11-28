@@ -1,0 +1,40 @@
+// Header
+.header{
+    background-image: url('../../images/header.svg');
+    width: 100%;
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
+    top: -65px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    .heading-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+        h1{
+            margin-bottom: 16px;
+            font-size: $large-font;
+            font-weight: $regular-font;
+            @include xxl{
+                font-size: $xlarge-font;
+            }
+            @include xxxl{
+                font-size: $xxlarge-font;
+            }
+        }
+    }
+}
