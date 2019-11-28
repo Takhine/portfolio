@@ -7,7 +7,7 @@ import {
 
 // Pages
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Projects from './pages/MyProjects';
 
 function App() {
   return (
