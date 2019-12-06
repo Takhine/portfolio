@@ -1,0 +1,71 @@
+.social{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    .bottom-right-container{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        justify-content: flex-end;
+        display: flex;
+        img{    
+            display: block;
+            width: 60%;
+            @include msm{
+                width: 40%;
+            }  
+            @include lg{
+                width: 50%;
+            }
+            @include xxl{
+                width: 70%;
+            }
+            @include xxxl{
+                width: 100%;
+            }
+        }
+    }
+    .social-container{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 100px;
+        justify-content: space-between;
+        color: white;
+        display: none;
+        @include md{
+            display: flex;
+        }
+        @include lg{
+            width: 200px;
+        }
+        img{
+            width: 30px;
+            &:nth-child(3){
+                vertical-align: super;
+            }
+            @include lg{
+                width: 50px;
+            }
+        }
+    }
+    .connect{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid $primary-purple;
+        border-radius: 16px;
+        width: 80px;
+        height: 25px;
+        display: block;
+        @include md{
+            display: none;
+        }
+    }
+}
