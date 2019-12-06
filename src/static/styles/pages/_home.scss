@@ -1,6 +1,6 @@
 // Header
 .header{
-    background-image: url('../../images/header.svg');
+    background-image: url('../../images/header-mobile.svg');
     width: 100%;
 	display: inline-block;
 	position: relative;
@@ -10,12 +10,15 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
     background-size: cover;
-    top: -65px;
     min-height: 40vh;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: -1;
+    @include md{
+        background-image: url('../../images/header.svg');
+    }
     .heading-container{
         display: flex;
         flex-direction: column;
@@ -23,10 +26,20 @@
         position: fixed;
         left: 0;
         right: 0;
+        top: 10px;
         text-align: center;
-        color: white;
+        color: $dark-black;
+        @include lg{
+            top: unset;
+        }
+        br{
+            display: block;
+            @include lg{
+                display: none;
+            }
+        }
         h1{
-            margin-bottom: 16px;
+            margin: 16px;
             font-size: $large-font;
             font-weight: $regular-font;
             @include xxl{
@@ -35,6 +48,26 @@
             @include xxxl{
                 font-size: $xxlarge-font;
             }
+        }
+    }
+}
+
+// Profile
+.profile-container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 140px;
+    @extend .container;
+    @include msm{
+        justify-content: flex-start;
+        top: 160px;
+    }
+    .profile{
+        width: 150px;
+        @include msm{
+            width: 200px;
         }
     }
 }

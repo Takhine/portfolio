@@ -1,0 +1,63 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    .top-left-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-start;
+        @include md{
+            display: none;
+        }
+        .menu{
+            padding-top: 8px;
+            z-index: 2;
+        }
+        .top-left{
+            position: absolute;
+        }
+    }
+    .top-right-container{
+        position: fixed;
+        top: 0;
+        right: 0;
+        justify-content: flex-end;
+        display: flex;
+        img{    
+            display: none;
+            @include md{
+                display: block;
+                width: 30%;
+            }
+            @include lg{
+                width: 40%;
+            }
+            @include xl{
+                width: 50%;
+            }
+            @include xxl{
+                width: 70%;
+            }
+            @include xxxl{
+                width: 100%;
+            }
+        }
+    }
+    .menu-container{
+        display: none;
+        width: 150px;
+        list-style: none;
+        justify-content: space-between;
+        color: white;
+        @include md{
+            display: flex;
+        }
+    }
+}

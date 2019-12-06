@@ -4,3 +4,22 @@
     padding: 0; 
     font-family: $main-font;
 }
+
+body{
+    background: $dark-black;
+}
+.container{
+    padding: 0 16px;
+    @include md{
+        padding: 0 60;
+    }
+    @include xl{
+        padding: 0 80px;
+    }
+    @include xxl{
+        padding: 0 120px;
+    }
+    @include xxxl{
+        padding: 0 160px;
+    }
+}
