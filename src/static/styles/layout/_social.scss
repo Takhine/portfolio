@@ -43,6 +43,11 @@
         @include lg{
             width: 200px;
         }
+        a{
+            &:nth-child(3){
+                padding-top: 5px;
+            }
+        }
         img{
             width: 30px;
             &:nth-child(3){

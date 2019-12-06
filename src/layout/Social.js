@@ -15,9 +15,15 @@ export default function Social() {
                 <img src={bottomRight} alt="Graphic" />
             </div>
             <div className="social-container">
-                <img src={github} alt="Find me on GitHub" />
-                <img src={linkedin} alt="Find me on LinkedIn" />
-                <img src={mail} alt="Mail me" />
+                <a href="https://github.com/Takhine" target="_blank" rel="noopener noreferrer">
+                    <img src={github} alt="Find me on GitHub" />
+                </a>
+                <a href="https://www.linkedin.com/in/aniketh-nair-132888148/" target="_blank" rel="noopener noreferrer">
+                    <img src={linkedin} alt="Find me on LinkedIn" />
+                </a>
+                <a href="mailto:anikethnair.developer@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src={mail} alt="Mail me" />
+                </a>
             </div>
             <button className="connect">Connect</button>
         </div>
