@@ -64,3 +64,24 @@
          @content;
      }
  }
+
+//  Buttons
+
+@mixin  primary-button {
+    color: white;
+    background-color: $primary-purple;
+    border-radius: 16px;
+    width: 80px;
+    height: 25px;
+    display: block;
+    border: none;
+}
+@mixin  secondary-button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid #6C63FF;
+    border-radius: 16px;
+    width: 80px;
+    height: 25px;
+    display: block;
+}

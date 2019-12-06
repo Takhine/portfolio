@@ -123,3 +123,78 @@
         }
     }
 }
+
+// About End
+
+// Startups Start
+
+.startups{
+    color: white;
+    font-weight: $regular-font;
+    min-height: 50vh;
+    b{
+        color: $primary-purple;
+    }
+    .heading{
+        font-size: $title-font;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 16px;
+        @include msm{
+            font-size: $large-font;
+        }
+        @include md{
+            text-align: left;
+            font-size: $xlarge-font;
+        }
+        img{
+            width: .8em;
+        }
+    }
+    .startups-container{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        @include md{
+            flex-direction: row;
+        }
+        .eventgrab{
+            margin-bottom: 10px;
+            @include md{
+                margin-right:10px;
+                margin-bottom: 0;
+            }
+        }
+        .eventgrab,.contribe{
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            @include md{
+                min-height: 207px;
+            }
+            @include xl{
+                min-height: 293px;
+            }
+            @include xxl{
+                min-height: 380px;
+            }
+            @include xxxl{
+                min-height: 452px;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        button{
+            @include primary-button;
+            margin-top: 20px;
+            display: inline;
+        }
+        p{
+            margin-top: 20px;
+            color: $primary-purple;
+        }
+    }
+}
