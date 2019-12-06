@@ -1,3 +1,18 @@
 .footer{
     background-color: white;
+    @extend .container;
+    img{
+        vertical-align: middle;
+    }
+    b{
+        color: $primary-purple;
+    }
+    p{
+        width: 200px;
+        line-height: 1;
+        font-size: 10px;
+        @include msm{
+            width: 100%;
+        }
+    }
 }
