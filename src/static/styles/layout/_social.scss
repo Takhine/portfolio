@@ -59,6 +59,18 @@
             }
         }
     }
+    .popover{
+        display: none;
+        padding: 20px;
+        bottom: 80px;
+        background: white;
+        position: fixed;
+        border-radius: 16px;
+        right: 20px;
+        img{
+            width: 40px;
+        }
+    }
     .connect{
         position: fixed;
         bottom: 41px;
@@ -72,6 +84,9 @@
         display: block;
         @include md{
             display: none;
+        }
+        &:focus{
+            outline: none;
         }
     }
 }
