@@ -9,11 +9,11 @@ import profile from 'static/images/profile.png';
 export default function Home() {
     return (
         <Container>
-            <div>
             <Header />
             <div className="profile-container">
             <img src={profile} className="profile" alt="Aniketh Nair" />
             </div>
+            <div className="content-container">
             <About />
             <Startups />
             <Skills />

@@ -29,7 +29,7 @@
         top: 10px;
         text-align: center;
         color: $dark-black;
-        @include lg{
+        @include msm{
             top: unset;
         }
         br{
@@ -68,6 +68,50 @@
         width: 150px;
         @include msm{
             width: 200px;
+        }
+    }
+}
+
+// Content
+.content-container{
+    @extend .container;
+}
+
+// About Start
+.about-container{
+    color: white;
+    font-weight: $regular-font;
+    b{
+        color: $primary-purple;
+    }
+    .welcome-message{
+        font-size: $title-font;
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 16px;
+        @include msm{
+            font-size: $large-font;
+        }
+        @include md{
+            text-align: left;
+            font-size: $xlarge-font;
+        }
+        
+    }
+    .welcome-description{
+        line-height: 1.2;
+        font-size: 15px;
+        @include msm{
+            font-size: $title-font;
+            max-width: 600px;
+            text-align: center;
+            margin: auto;
+        }
+        @include md{
+            width: 610px;
+            font-size: 22px;
+            text-align: unset;
+            margin: unset;
         }
     }
 }
