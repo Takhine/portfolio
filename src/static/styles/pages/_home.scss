@@ -88,7 +88,7 @@
 .about-container{
     color: white;
     font-weight: $regular-font;
-    min-height: 50vh;
+    min-height: 40vh;
     b{
         color: $primary-purple;
     }
@@ -106,7 +106,7 @@
         }
         
     }
-    .welcome-description{
+    @at-root .welcome-description{
         line-height: 1.2;
         font-size: 15px;
         @include msm{
@@ -132,6 +132,7 @@
     color: white;
     font-weight: $regular-font;
     min-height: 50vh;
+    margin-bottom: 20vh;
     b{
         color: $primary-purple;
     }
@@ -198,3 +199,18 @@
         }
     }
 }
+// Startups End
+
+// Skills Start
+.skills{
+    @extend .startups;
+    .heading{
+        @extend .heading;
+    }
+    p{
+        margin-bottom: 16px;
+        @extend .welcome-description;
+    }
+}
+
+// Skills End
