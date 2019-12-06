@@ -32,6 +32,9 @@
         @include msm{
             top: unset;
         }
+        @media (orientation:landscape) and (max-width:1024px) and (max-height:900px) {
+            top: 0;
+        }
         br{
             display: block;
             @include lg{
@@ -64,6 +67,10 @@
         justify-content: flex-start;
         top: 160px;
     }
+    @media (orientation:landscape) and (max-width:1024px) and (max-height:900px) {
+        justify-content: flex-start;
+        top: 60px;
+    }
     .profile{
         width: 150px;
         @include msm{
@@ -81,6 +88,7 @@
 .about-container{
     color: white;
     font-weight: $regular-font;
+    min-height: 50vh;
     b{
         color: $primary-purple;
     }
