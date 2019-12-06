@@ -62,6 +62,7 @@
     display: flex;
     justify-content: center;
     top: 140px;
+    z-index: -1;
     @extend .container;
     @include msm{
         justify-content: flex-start;

@@ -2,7 +2,6 @@ import React from 'react';
 
 // Components
 import Navbar from './Navbar';
-import Social from './Social';
 import Footer from './Footer';
 import 'static/styles/main.scss';
 export default function Container(props) {
@@ -10,7 +9,7 @@ export default function Container(props) {
         <React.Fragment>
             <Navbar />
             {props.children}
-            <Social />
+            {/* <Social /> */}
             <Footer />
         </React.Fragment>
     )

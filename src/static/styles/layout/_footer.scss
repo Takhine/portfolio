@@ -13,6 +13,7 @@
         font-size: 10px;
         @include msm{
             width: 100%;
+            font-size: $default-font;
         }
     }
 }
