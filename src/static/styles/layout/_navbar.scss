@@ -69,7 +69,10 @@
         width: 150px;
         list-style: none;
         justify-content: space-between;
-        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+        }
         @include rwd(300, 768){
             position: fixed;
             height: 100vh;
@@ -88,8 +91,13 @@
             clip-path: circle(100px at 0% -35%);
             -webkit-clip-path: circle(100px at 0% -35%);
             transition: all .6s ease-out;
+            a{
+                text-decoration: none;
+                color: $primary-black;
+            }
             li{
                 margin-bottom: 24px;
+                
             }
             &-open{
                 clip-path: circle(1200px at 0% -15%);

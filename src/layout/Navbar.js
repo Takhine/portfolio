@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 // Images
 import topRight from 'static/images/layout/top-right.svg';
 import topLeft from 'static/images/layout/top-left.svg';
@@ -29,8 +30,12 @@ export default function Navbar() {
                     </button>
                 </div>
                 <ul className={state ? "menu-container-open menu-container" : "menu-container"}>
-                    <li>Home</li>
-                    <li>Projects</li>
+                    <NavLink exact to="/">
+                        <li>Home</li>
+                    </NavLink>
+                    <NavLink exact to="/projects">
+                        <li>Projects</li>
+                    </NavLink>
                 </ul>
                 {!state &&
                     <Social />
