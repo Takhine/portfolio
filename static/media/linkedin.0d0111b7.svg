@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.175" height="70.175" viewBox="0 0 70.175 70.175">
+  <defs>
+    <filter id="linkedin" x="0" y="0" width="70.175" height="70.175" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#linkedin)">
+    <path id="linkedin-2" data-name="linkedin" d="M44.451,44.462H36.725V32.355c0-2.887-.059-6.6-4.026-6.6-4.028,0-4.644,3.141-4.644,6.389v12.32H20.329v-24.9h7.422v3.394h.1a8.142,8.142,0,0,1,7.326-4.022c7.828,0,9.276,5.152,9.276,11.859V44.462ZM11.6,16.159A4.487,4.487,0,1,1,16.09,11.67,4.483,4.483,0,0,1,11.6,16.159Zm3.874,28.3H7.728v-24.9h7.748ZM48.316,0H3.85A3.8,3.8,0,0,0,0,3.759V48.417a3.8,3.8,0,0,0,3.85,3.759H48.31a3.817,3.817,0,0,0,3.865-3.759V3.759A3.819,3.819,0,0,0,48.31,0Z" transform="translate(9 6)" fill="#6c63ff"/>
+  </g>
+</svg>
