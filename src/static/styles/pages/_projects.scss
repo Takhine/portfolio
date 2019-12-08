@@ -1,5 +1,7 @@
 // Header
-
+.projects-header{
+    top: -65px;
+}
 // Projects Start
 
 .to-top{
@@ -27,6 +29,21 @@
         color: white;
         margin: 12px 0;
         display: block;
+    }
+    .projects-menu{
+        top: -60px;
+        position: relative;
+        left: 35px;
+        color: $primary-purple;
+        
+        li a{
+            transition: $transition-main;
+            cursor: pointer;
+            &:hover{
+                color: $primary-purple;
+                transition: $transition-main;
+            }
+        }
     }
     .project{
         margin: 32px 0;

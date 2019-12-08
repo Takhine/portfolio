@@ -9,7 +9,6 @@ export default function Container(props) {
         <React.Fragment>
             <Navbar />
             {props.children}
-            {/* <Social /> */}
             <Footer />
         </React.Fragment>
     )

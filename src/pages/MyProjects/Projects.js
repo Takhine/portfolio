@@ -1,4 +1,7 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+
+
 // Images
 import jbm from 'static/images/projects/jbm.PNG';
 import eg from 'static/images/projects/eg.PNG';
@@ -13,6 +16,7 @@ const projectList = [
     {
         id: 1,
         name: 'Jewels by Mala',
+        ref:'project1',
         description: 'A jewellery website with a focus on high quality jewels, Jewels by Mala has mutiple diamond and uncut-diamond collections all of which are designed personally by the founder of the company.',
         link: 'http://jewels-by-mala.herokuapp.com/',
         img: jbm,
@@ -27,6 +31,7 @@ const projectList = [
     {
         id: 2,
         name: 'Eventgrab',
+        ref:'project2',
         description: 'Rent equipment, book performers and hire organisers! As your moments turn into hours, turn every occasion into an event with eventgrab. Eventgrab is an event management & equipment rental portal, here to make event organizing easier.',
         link: 'http://eventgrab.com/',
         img: eg,
@@ -49,6 +54,7 @@ const projectList = [
     {
         id: 3,
         name: 'Giri Consultancy Services',
+        ref:'project3',
         description: "Giri Consultancy Services Is A Human Resources Consultancy Firm Specialized In Providing Manpower For Paints, Coatings, Inks, Polymer, Plastics, Specialty Chemicals, Science And Technology. Our specialization doesn't stop there. Having experienced executives in almost all industries we have time and again proved that our experience plays a major role in job search & hiring.",
         link: 'https://giriconsultancy.in/',
         img: gcs,
@@ -71,6 +77,7 @@ const projectList = [
     {
         id: 4,
         name: 'Hungry Hearts Soccer School',
+        ref:'project4',
         description: "At Hungrey Hearts Soccer School Coach Ganesh, is focused on making the foundation of footballers strong at an early age and instill sportsmanship in them. His motto 'Let's build early', is what he follows in his own lifestyle as someone who has played for the Indian Team himself.",
         link: 'http://hungryheartssoccerschool.com/',
         img: hhss,
@@ -87,6 +94,7 @@ const projectList = [
     {
         id: 5,
         name: 'Euphoric Victorians',
+        ref:'project5',
         description: "Euphoric Victorians is a community of academics with the aim to create and proliferate a culture of excellence and distinctiveness that inspires intellectual competitiveness, wholesome development, spirit of enterprise, quality in education and lifelong learning skills, in a learner-centered, educator-centered and technology enabled environment of world class standards.",
         link: 'http://euphoricvictorians.com/',
         img: ev,
@@ -107,13 +115,39 @@ const projectList = [
     },
 ]
 export default function Projects() {
+    function scrollToTop() {
+        scroll.scrollToTop();
+      }
+      useEffect(() => {
+        Events.scrollEvent.register('begin', function(to, element) {
+            console.log("begin", arguments);
+          });
+       
+          Events.scrollEvent.register('end', function(to, element) {
+            console.log("end", arguments);
+          });
+       
+          scrollSpy.update();
+          return()=>{
+            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove('end');
+          }
+    }, [])
     return (
         <div className="projects-container">
-            <button className="to-top">^</button>
+            <button className="to-top" onClick={scrollToTop}>^</button>
+            <ol className="projects-menu">
+                <li><Link activeClass="active" to="project1" spy={true} smooth={true} duration={500} offset={-50}>Jewels by Mala</Link></li>
+                <li><Link activeClass="active" to="project2" spy={true} smooth={true} duration={500} offset={-50}>Eventgrab</Link></li>
+                <li><Link activeClass="active" to="project3" spy={true} smooth={true} duration={500} offset={-50}>Giri Consultancy Services</Link></li>
+                <li><Link activeClass="active" to="project4" spy={true} smooth={true} duration={500} offset={-50}>Hungry Hearts Soccer School</Link></li>
+                <li><Link activeClass="active" to="project5" spy={true} smooth={true} duration={500} offset={-50}>Euphoric Victorians</Link></li>
+                <p>Get in touch for more :)</p>
+            </ol>
             {projectList.map((project) => {
                 return (
                     <div className="project" key={project.id}>
-                        <h2 className="project-heading">Project #{project.id}</h2>
+                        <h2 className="project-heading" name={project.ref}>Project #{project.id}</h2>
                         <p className="description">{project.name}: <b>{project.description}</b></p>
 
                         <div className="content-wrapper">
