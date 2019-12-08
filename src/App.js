@@ -14,7 +14,7 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="https://takhine.github.io/portfolio/"  component={Home} />
+          <Route path="/" exact={true} component={Home} />
           <Route path="/projects" exact={true} component={Projects} />
           <Route render={() => <h1>Page not found</h1>} />
         </Switch>
