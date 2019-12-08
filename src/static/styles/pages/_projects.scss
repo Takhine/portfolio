@@ -14,7 +14,7 @@
         display: block;
     }
     .project{
-        margin-bottom: 10px;
+        margin: 32px 0;
         .project-heading{
             font-size: $title-font;
             font-weight: lighter;
@@ -104,3 +104,46 @@
 }
 
 // Projects End
+
+// Contact Start
+.contact{
+    @extend .container;
+    margin: 24px 0;
+    color: white;
+    b{
+        color: $primary-purple;
+    }
+    a{
+        text-decoration: none;
+    }
+    .heading{
+        font-size: $title-font;
+            font-weight: lighter;
+            margin-bottom: 16px;
+            @include msm{
+                font-size: $large-font;
+            }
+            @include md{
+                font-size: $xlarge-font;
+            }
+    }
+    .whoami,.cta{
+        margin: 16px 0;
+    }
+    img{
+        width: 15px;
+    }
+    .cta{
+        display: inline;
+    }
+    @at-root .contact-button{
+        display: block;
+        margin: 24px 0;
+        @include primary-button;
+        min-width: 120px;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+// Contact End

@@ -94,6 +94,9 @@
     b{
         color: $primary-purple;
     }
+    a{
+        text-decoration: none;
+    }
     .welcome-message{
         font-size: $title-font;
         font-weight: lighter;

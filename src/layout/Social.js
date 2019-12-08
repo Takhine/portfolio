@@ -25,7 +25,7 @@ const SocialLinks = () => {
 
 export default function Social() {
     const [state, setState] = useState(false);
-    console.log(state);
+    // console.log(state);
     function handleChange(e) {
         setState(!state);
     }

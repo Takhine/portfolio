@@ -36,7 +36,7 @@ export default function Navbar() {
                     <NavLink exact to="/projects">
                         <li>Projects</li>
                     </NavLink>
-                    <a href="/projects">
+                    <a href="https://forms.gle/4XBtKYPquLjDXv6j7" target="_blank" rel="noopener noreferrer">
                         <li>Contact</li>
                     </a>
                 </ul>
