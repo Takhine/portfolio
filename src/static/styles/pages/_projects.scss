@@ -1,0 +1,106 @@
+// Header
+
+// Projects Start
+.projects-container{
+    @extend .container;
+    color: white;
+    font-weight: $regular-font;
+    b{
+        color: $primary-purple;
+    }
+    a{
+        color: white;
+        margin: 12px 0;
+        display: block;
+    }
+    .project{
+        margin-bottom: 10px;
+        .project-heading{
+            font-size: $title-font;
+            font-weight: lighter;
+            margin-bottom: 16px;
+            color: $primary-purple;
+            @include msm{
+                font-size: $large-font;
+            }
+            @include md{
+                font-size: $xlarge-font;
+            }
+            
+        }
+        .description{
+            margin: 12px 0;
+        }
+        .section-title{
+            @extend .project-heading;
+            font-size: $regular-font;
+            @include md{
+                font-size: $large-font;
+            }
+        }
+        .content-wrapper{
+            display: flex;
+            flex-direction: column;
+            @include md{
+                flex-direction: row;
+            }
+            .left-top{
+                margin-bottom: 16px;
+                margin-right: unset;
+                @include md{
+                    margin-bottom: unset;
+                    margin-right: 16px;
+                }
+                .image-container{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .buttons-container{
+                    margin: 12px 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    a{
+                        text-decoration: none;
+
+                    }
+                    .visit{
+                        @include primary-button;
+                        margin-right: 12px;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                    .source{
+                        @include primary-button;
+                        color: $primary-black;
+                        background: white;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .technologies-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .technology{
+                        width: 30%;
+                        margin-left: 18px;
+                    }
+                }
+            }
+
+            .right-bottom{
+                p{
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        hr{
+            border-color: $primary-purple;
+            margin: 12px 0;
+        }
+    }
+}
+
+// Projects End

@@ -15,7 +15,7 @@ export default function Navbar() {
         setState(!state)
     }
     return (
-            <div className="navbar container">
+            <div className="navbar">
                 <div className="top-right-container">
                     <img src={topRight} alt="Graphic" />
                 </div>
@@ -36,6 +36,9 @@ export default function Navbar() {
                     <NavLink exact to="/projects">
                         <li>Projects</li>
                     </NavLink>
+                    <a href="/projects">
+                        <li>Contact</li>
+                    </a>
                 </ul>
                 {!state &&
                     <Social />

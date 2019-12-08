@@ -75,6 +75,15 @@
     height: 25px;
     display: block;
     border: none;
+    cursor: pointer;
+    transition: $transition-main;
+
+    &:hover{
+        color: $primary-purple;
+        background-color: white;
+        border: 1px solid $primary-purple;
+        transition: $transition-main;
+    }
 }
 @mixin  secondary-button {
     color: white;

@@ -6,6 +6,11 @@
     justify-content: flex-end;
     padding-top: 16px;
     padding-bottom: 16px;
+    @include xxl{
+        padding-right: 40px;
+    }
+    @extend .container;
+   
     .top-left-container{
         position: fixed;
         top: 0;
@@ -13,7 +18,7 @@
         right: 0;
         display: flex;
         justify-content: flex-start;
-        @include md{
+        @media (min-width:769px){
             display: none;
         }
         button{
@@ -48,16 +53,7 @@
             display: none;
             @include md{
                 display: block;
-                width: 30%;
-            }
-            @include lg{
-                width: 40%;
-            }
-            @include xl{
                 width: 50%;
-            }
-            @include xxl{
-                width: 70%;
             }
             @include xxxl{
                 width: 100%;
@@ -66,7 +62,7 @@
     }
     .menu-container{
         display: none;
-        width: 150px;
+        width: 250px;
         list-style: none;
         justify-content: space-between;
         z-index: 2;
