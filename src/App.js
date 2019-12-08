@@ -14,8 +14,8 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="/portfolio" exact={true} component={Home} />
-          <Route path="/projects" exact={true} component={Projects} />
+          <Route path="/" component={Home} />
+          <Route path="/projects" component={Projects} />
           <Route render={() => <h1>Page not found</h1>} />
         </Switch>
       </Router>
