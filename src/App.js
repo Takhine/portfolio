@@ -14,7 +14,7 @@ function App() {
     <div>
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/projects" exact={true} component={Projects} />
           <Route render={() => <h1>Page not found</h1>} />
         </Switch>
