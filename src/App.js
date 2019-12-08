@@ -12,10 +12,10 @@ import Projects from './pages/MyProjects';
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" component={Home} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/projects" exact={true} component={Projects} />
           <Route render={() => <h1>Page not found</h1>} />
         </Switch>
       </Router>
