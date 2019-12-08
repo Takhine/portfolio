@@ -27,6 +27,22 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: $primary-purple; 
   }
+
+//   Scroll to top
+.to-top{
+    border: none;
+    padding: 0px 5px;
+    border-radius: 4px;
+    color: $primary-black;
+    font-size: x-large;
+    background: $primary-purple;
+    position: fixed;
+    bottom: 35px;
+    left: 20px;
+    @include msm{
+        padding: 5px 10px;
+    }
+}
 .container{
     padding: 0 16px;
     @include md{

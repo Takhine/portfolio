@@ -1,4 +1,6 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
+
 import {NavLink} from 'react-router-dom';
 // Images
 import topRight from 'static/images/layout/top-right.svg';
@@ -10,7 +12,9 @@ import Social from './Social';
 
 export default function Navbar() {
     const [state, setState] = React.useState(false);
-
+    function scrollToTop() {
+        scroll.scrollToTop();
+      }
     function handleOpen() {
         setState(!state)
     }
@@ -42,6 +46,9 @@ export default function Navbar() {
                 </ul>
                 {!state &&
                     <Social />
+                }
+                {!state &&
+                    <button className="to-top" onClick={scrollToTop}>^</button>
                 }
             </div>
     )

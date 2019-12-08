@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import { Link, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { Link, Events, animateScroll as  scrollSpy } from 'react-scroll';
 
 
 // Images
@@ -115,9 +115,6 @@ const projectList = [
     },
 ]
 export default function Projects() {
-    function scrollToTop() {
-        scroll.scrollToTop();
-      }
       useEffect(() => {
         Events.scrollEvent.register('begin', function(to, element) {
             console.log("begin", arguments);
@@ -135,7 +132,6 @@ export default function Projects() {
     }, [])
     return (
         <div className="projects-container">
-            <button className="to-top" onClick={scrollToTop}>^</button>
             <ol className="projects-menu">
                 <li><Link activeClass="active" to="project1" spy={true} smooth={true} duration={500} offset={-50}>Jewels by Mala</Link></li>
                 <li><Link activeClass="active" to="project2" spy={true} smooth={true} duration={500} offset={-50}>Eventgrab</Link></li>
