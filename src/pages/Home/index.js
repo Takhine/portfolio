@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Container from 'layout/Container';
 // Components
 import Header from './Header';
@@ -7,6 +7,9 @@ import Startups from './Startups';
 import Skills from './Skills';
 import profile from 'static/images/profile.png';
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <Container>
             <Header />
