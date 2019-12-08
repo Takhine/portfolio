@@ -109,6 +109,7 @@ const projectList = [
 export default function Projects() {
     return (
         <div className="projects-container">
+            <button className="to-top">^</button>
             {projectList.map((project) => {
                 return (
                     <div className="project" key={project.id}>

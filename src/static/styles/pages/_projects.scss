@@ -1,6 +1,21 @@
 // Header
 
 // Projects Start
+
+.to-top{
+    border: none;
+    padding: 0px 5px;
+    border-radius: 4px;
+    color: $primary-black;
+    font-size: x-large;
+    background: $primary-purple;
+    position: fixed;
+    bottom: 35px;
+    left: 20px;
+    @include msm{
+        padding: 5px 10px;
+    }
+}
 .projects-container{
     @extend .container;
     color: white;
