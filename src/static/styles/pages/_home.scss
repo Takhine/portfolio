@@ -75,6 +75,7 @@
     }
     .profile{
         width: 150px;
+        height: auto;
         @include msm{
             width: 200px;
         }

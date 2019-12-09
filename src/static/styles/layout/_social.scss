@@ -16,6 +16,9 @@
         img{    
             display: block;
             width: 60%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
             @include msm{
                 width: 40%;
             }  
