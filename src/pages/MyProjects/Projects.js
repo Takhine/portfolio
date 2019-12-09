@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import { Link, Events, animateScroll as  scrollSpy } from 'react-scroll';
+import { Link, Events } from 'react-scroll';
 
 
 // Images
@@ -117,14 +117,12 @@ const projectList = [
 export default function Projects() {
       useEffect(() => {
         Events.scrollEvent.register('begin', function(to, element) {
-            console.log("begin", arguments);
           });
        
           Events.scrollEvent.register('end', function(to, element) {
-            console.log("end", arguments);
           });
        
-          scrollSpy.update();
+
           return()=>{
             Events.scrollEvent.remove('begin');
             Events.scrollEvent.remove('end');
