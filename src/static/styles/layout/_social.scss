@@ -20,10 +20,10 @@
             bottom: 0;
             right: 0;
             @include msm{
-                width: 40%;
+                width: 30%;
             }  
             @include lg{
-                width: 50%;
+                width: 30%;
             }
             @include xxxl{
                 width: 100%;
