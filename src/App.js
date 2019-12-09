@@ -12,7 +12,7 @@ import Projects from './pages/MyProjects';
 function App() {
   return (
     <div>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/projects" exact={true} component={Projects} />
