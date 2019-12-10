@@ -59,11 +59,12 @@
     .popover{
         display: none;
         padding: 20px;
-        bottom: 80px;
+        bottom: 40px;
         background: white;
         position: fixed;
         border-radius: 16px;
-        right: 20px;
+        right: 10px;
+        z-index: 2;
         img{
             width: 40px;
         }
