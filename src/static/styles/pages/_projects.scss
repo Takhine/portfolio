@@ -155,7 +155,7 @@
     }
     @at-root .contact-button{
         display: inline;
-        margin: 24px 0;
+        margin: 12px 0 24px;
         @include primary-button;
         min-width: 120px;
         &:focus{
