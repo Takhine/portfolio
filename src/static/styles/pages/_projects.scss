@@ -154,7 +154,7 @@
         display: inline;
     }
     @at-root .contact-button{
-        display: block;
+        display: inline;
         margin: 24px 0;
         @include primary-button;
         min-width: 120px;

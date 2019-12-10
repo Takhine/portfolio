@@ -75,9 +75,10 @@
     }
     .profile{
         width: 150px;
-        height: auto;
+        height: 150px;
         @include msm{
             width: 200px;
+            height: 200px;
         }
     }
 }

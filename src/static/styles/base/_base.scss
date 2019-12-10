@@ -5,6 +5,11 @@
     font-family: $main-font;
 }
 
+@font-face{
+    font-family:"OCR A";
+    src:url(../../fonts/OCR-A.ttf) format("truetype");
+    font-weight: 200;
+}
 body{
     background: $dark-black;
 }
@@ -31,7 +36,7 @@ body{
 //   Scroll to top
 .to-top{
     border: none;
-    padding: 0px 5px;
+    padding: 5px 10px;
     border-radius: 4px;
     color: $primary-black;
     font-size: x-large;
