@@ -5,7 +5,7 @@ export default function Header(){
         <div className="header">
             <div className="heading-container">
                 <h1>Aniketh Nair</h1>
-                <p>Freelancer.<br/> Startup Enthusiast.<br/> Frontend Web Dev</p>
+                <p>Consultant.<br/> Startup Enthusiast.<br/> Frontend Web Dev</p>
             </div>
         </div>
     )
