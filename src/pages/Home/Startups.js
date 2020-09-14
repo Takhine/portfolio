@@ -1,7 +1,7 @@
 import React from 'react';
 import heart from 'static/images/heart.svg';
 import eg from 'static/images/eg.png';
-import ct from 'static/images/ct.png';
+import ct from 'static/images/nomadion.PNG';
 
 
 export default function Startups() {
@@ -16,8 +16,10 @@ export default function Startups() {
                     </a>
                 </div>
                 <div className="contribe">
-                    <img src={ct} alt="Contribe" />
-                    <p>Coming Soon</p>
+                    <img src={ct} alt="Nomadion" />
+                    <a href="http://nomadion.org" target="_blank" rel="noopener noreferrer">
+                        <button>Visit</button>
+                    </a>
                 </div>
             </div>
         </div>
