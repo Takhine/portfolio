@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51236238a08f7b0a078614e94946acbc",
+    "revision": "61dd7c06c5d188ef47cada5c593656a1",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5694e6ac4336a09c91cf",
-    "url": "/portfolio/static/css/main.f5be92cd.chunk.css"
+    "revision": "5c512a2ffaf9ef33be2a",
+    "url": "/portfolio/static/css/main.bb46a56d.chunk.css"
   },
   {
-    "revision": "4d8ac731be02be976ef7",
-    "url": "/portfolio/static/js/2.72514b95.chunk.js"
+    "revision": "f6cbde4bf71417ca573f",
+    "url": "/portfolio/static/js/2.bcfe830f.chunk.js"
   },
   {
-    "revision": "5694e6ac4336a09c91cf",
-    "url": "/portfolio/static/js/main.63898be5.chunk.js"
+    "revision": "5c512a2ffaf9ef33be2a",
+    "url": "/portfolio/static/js/main.1152deee.chunk.js"
   },
   {
-    "revision": "6b26cb3bc1b9147ba086",
-    "url": "/portfolio/static/js/runtime-main.86a05020.js"
+    "revision": "add6ff81d93680170b15",
+    "url": "/portfolio/static/js/runtime-main.2601f1e9.js"
+  },
+  {
+    "revision": "89959e69390d1557d734aeedf2eeb377",
+    "url": "/portfolio/static/media/bdp.89959e69.PNG"
   },
   {
     "revision": "07dd821ebc9779ee4acb5c9ddb72fa52",
@@ -28,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/bottom-right.908e9bd6.svg"
   },
   {
-    "revision": "3f816847ecd1eee2db9af2e13cc138dd",
-    "url": "/portfolio/static/media/ct.3f816847.png"
-  },
-  {
     "revision": "ae4d5b50fcb327cb0a82d52e5dfe6af6",
     "url": "/portfolio/static/media/down.ae4d5b50.svg"
+  },
+  {
+    "revision": "5dc5dff4ad8ca86cc9fc1cf918aa39e9",
+    "url": "/portfolio/static/media/dp.5dc5dff4.PNG"
   },
   {
     "revision": "04e81312efe79271abba75548d8bc7b5",
@@ -92,6 +96,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/menu.95b681d4.svg"
   },
   {
+    "revision": "ce4e7fbe769627a4c3c7c40d00b62549",
+    "url": "/portfolio/static/media/nom.ce4e7fbe.PNG"
+  },
+  {
+    "revision": "06244246bcad93fa0c7b259111d23adf",
+    "url": "/portfolio/static/media/nomadion.06244246.PNG"
+  },
+  {
     "revision": "bf53705bfccd7bcf0949d127e8241bc9",
     "url": "/portfolio/static/media/ocr-a-bt.bf53705b.ttf"
   },
@@ -104,11 +116,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/react.5410735e.svg"
   },
   {
+    "revision": "25c9736f16d887601c4d798573fcd5d4",
+    "url": "/portfolio/static/media/tof.25c9736f.PNG"
+  },
+  {
     "revision": "9b168e73fb192ea96b224b1cc2bfd552",
     "url": "/portfolio/static/media/top-left.9b168e73.svg"
   },
   {
     "revision": "8ff2053c3a47f98a503a5dacf23b5901",
     "url": "/portfolio/static/media/top-right.8ff2053c.svg"
+  },
+  {
+    "revision": "6242b2e77035945678c955b54874e17c",
+    "url": "/portfolio/static/media/won.6242b2e7.PNG"
   }
 ]);
